@@ -1,0 +1,333 @@
+.flag {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 100%;
+  clear: both;
+  background-position: center;
+}
+
+.flag-lg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 160px;
+  width: 100%;
+  clear: both;
+  background-position: center;
+}
+
+.afg {
+  background-image: url("../images/flags/afg-lg.gif");
+}
+
+.arm {
+  background-image: url("../images/flags/arm-lg.gif");
+}
+
+.ben {
+  background-image: url("../images/flags/ben-lg.gif");
+}
+
+.bfa {
+  background-image: url("../images/flags/bfa-lg.gif");
+}
+
+.bgd {
+  background-image: url("../images/flags/bgd-lg.gif");
+}
+
+.civ {
+  background-image: url("../images/flags/civ-lg.gif");
+}
+
+.cmr {
+  background-image: url("../images/flags/cmr-lg.gif");
+}
+
+.cod {
+  background-image: url("../images/flags/cod-lg.gif");
+}
+
+.dji {
+  background-image: url("../images/flags/dji-lg.gif");
+}
+
+.dom {
+  background-image: url("../images/flags/dom-lg.gif");
+}
+
+.egy {
+  background-image: url("../images/flags/egy-lg.gif");
+}
+
+.eth {
+  background-image: url("../images/flags/eth-lg.gif");
+}
+
+.gha {
+  background-image: url("../images/flags/gha-lg.gif");
+}
+
+.gin {
+  background-image: url("../images/flags/gin-lg.gif");
+}
+
+.gmb {
+  background-image: url("../images/flags/gmb-lg.gif");
+}
+
+.gtm {
+  background-image: url("../images/flags/gtm-lg.gif");
+}
+
+.hti {
+  background-image: url("../images/flags/hti-lg.gif");
+}
+
+.idn {
+  background-image: url("../images/flags/idn-lg.gif");
+}
+
+.ind {
+  background-image: url("../images/flags/ind-lg.gif");
+}
+
+.jor {
+  background-image: url("../images/flags/jor-lg.gif");
+}
+
+.ken {
+  background-image: url("../images/flags/ken-lg.gif");
+}
+
+.khm {
+  background-image: url("../images/flags/khm-lg.gif");
+}
+
+.lao {
+  background-image: url("../images/flags/lao-lg.gif");
+}
+
+.lbn {
+  background-image: url("../images/flags/lbn-lg.gif");
+}
+
+.lbr {
+  background-image: url("../images/flags/lbr-lg.gif");
+}
+
+.lka {
+  background-image: url("../images/flags/lka-lg.gif");
+}
+
+.mdg {
+  background-image: url("../images/flags/mdg-lg.gif");
+}
+
+.mli {
+  background-image: url("../images/flags/mli-lg.gif");
+}
+
+.mmr {
+  background-image: url("../images/flags/mmr-lg.gif");
+}
+
+.moz {
+  background-image: url("../images/flags/moz-lg.gif");
+}
+
+.mrt {
+  background-image: url("../images/flags/mrt-lg.gif");
+}
+
+.mwi {
+  background-image: url("../images/flags/mwi-lg.gif");
+}
+
+.ner {
+  background-image: url("../images/flags/ner-lg.gif");
+}
+
+.nga {
+  background-image: url("../images/flags/nga-lg.gif");
+}
+
+.npl {
+  background-image: url("../images/flags/npl-lg.gif");
+}
+
+.pak {
+  background-image: url("../images/flags/pak-lg.gif");
+}
+
+.phl {
+  background-image: url("../images/flags/phl-lg.gif");
+}
+
+.rwa {
+  background-image: url("../images/flags/rwa-lg.gif");
+}
+
+.sen {
+  background-image: url("../images/flags/sen-lg.gif");
+}
+
+.sle {
+  background-image: url("../images/flags/sle-lg.gif");
+}
+
+.sdn {
+  background-image: url("../images/flags/sdn-lg.png");
+}
+
+.ssd {
+  background-image: url("../images/flags/ssd-lg.gif");
+}
+
+.tcd {
+  background-image: url("../images/flags/tcd-lg.gif");
+}
+
+.tgo {
+  background-image: url("../images/flags/tgo-lg.gif");
+}
+
+.tjk {
+  background-image: url("../images/flags/tjk-lg.gif");
+}
+
+.tza {
+  background-image: url("../images/flags/tza-lg.gif");
+}
+
+.uga {
+  background-image: url("../images/flags/uga-lg.gif");
+}
+
+.wbg {
+  background-image: url("../images/flags/wbg-lg.gif");
+}
+
+.yem {
+  background-image: url("../images/flags/yem-lg.gif");
+}
+
+.zmb {
+  background-image: url("../images/flags/zmb-lg.gif");
+}
+
+.zwe {
+  background-image: url("../images/flags/zwe-lg.gif");
+}
+
+.are {
+  background-image: url("../images/flags/are-lg.gif");
+}
+
+.bhr {
+  background-image: url("../images/flags/bhr-lg.gif");
+}
+
+.dza {
+  background-image: url("../images/flags/dza-lg.gif");
+}
+
+.irn {
+  background-image: url("../images/flags/irn-lg.gif");
+}
+
+.irq {
+  background-image: url("../images/flags/irq-lg.gif");
+}
+
+.isr {
+  background-image: url("../images/flags/isr-lg.gif");
+}
+
+.kwt {
+  background-image: url("../images/flags/kwt-lg.gif");
+}
+
+.lby {
+  background-image: url("../images/flags/lby-lg.gif");
+}
+
+.mar {
+  background-image: url("../images/flags/mar-lg.gif");
+}
+
+.omn {
+  background-image: url("../images/flags/omn-lg.gif");
+}
+
+.qat {
+  background-image: url("../images/flags/qat-lg.gif");
+}
+
+.sau {
+  background-image: url("../images/flags/sau-lg.gif");
+}
+
+.syr {
+  background-image: url("../images/flags/syr-lg.gif");
+}
+
+.tun {
+  background-image: url("../images/flags/tun-lg.gif");
+}
+
+.cpv {
+  background-image: url("../images/flags/cpv-lg.gif");
+}
+
+.gab {
+  background-image: url("../images/flags/gab-lg.gif");
+}
+
+.gnb {
+  background-image: url("../images/flags/gnb-lg.gif");
+}
+
+.gnq {
+  background-image: url("../images/flags/gnq-lg.gif");
+}
+
+.stp {
+  background-image: url("../images/flags/stp-lg.gif");
+}
+
+.zaf {
+  background-image: url("../images/flags/zaf-lg.gif");
+}
+
+.bwa {
+  background-image: url("../images/flags/bwa.svg");
+}
+
+.nam {
+  background-image: url("../images/flags/nam.svg");
+}
+
+.lso {
+  background-image: url("../images/flags/lso.svg");
+}
+
+.swz {
+  background-image: url("../images/flags/swz.svg");
+}
+
+.png {
+  background-image: url("../images/flags/png.svg");
+}
+
+.ecu {
+  background-image: url("../images/flags/ecu.svg");
+}
+
+.per {
+  background-image: url("../images/flags/per.svg");
+}
+
+.wbg {
+  background-image: url("../images/flags/wbg.svg");
+}

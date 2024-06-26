@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap_limitless.css" rel="stylesheet">
+    <link href="assets/css/components.css" rel="stylesheet">
+    <link href="assets/css/layout.css" rel="stylesheet">
+    <link href="assets/css/colors.css">
+    <link href="assets/css/icons/icomoon/styles.min.css" rel="stylesheet">
+    <link href="assets/css/icons/fontawesome5/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/leaflet.css" rel="stylesheet">
+
+    <!-- Plugins -->
+    <link href="assets/css/select2.min.css" rel="stylesheet">
+    <link href="assets/css/leaflet.css" rel="stylesheet">
+
+    <!-- Custom stylesheets -->
+    <link href="assets/css/flags.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="row pt-5">
+    <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+<!--        Regions-->
+        <div class="region-div">
+            <div class="item">
+                <div class="active">
+                    <div data-region="Africa">AFRICA</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="">
+                    <div data-region="Asia">ASIA</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="">
+                    <div data-region="Middle East">MIDDLE EAST</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="">
+                    <div data-region="Latin America and the Caribbean">LATIN AMERICA AND THE CARIBBEAN</div>
+                </div>
+            </div>
+<!--            <div class="item">-->
+<!--                <div class="">-->
+<!--                    <div data-region="Europe Eurasia">EUROPE EURASIA</div>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+<!--        Countries-->
+        <h2 class="country-title">Africa</h2>
+        <div class="countries-container">
+
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+<!--        Map-->
+        <div class="col-12 map-wrapper" id="map-wrapper">
+            <div class="map-container" id="map-container" data-namespace="map-container"></div>
+            <div class="ml-3 mr-3 legend-container" id="legend-container"></div>
+        </div>
+    </div>
+</div>
+
+<div class="jet-listing-dynamic-repeater__items ">
+    <div class="jet-listing-dynamic-repeater__item">
+        <a href="https://waterc.sg-host.com/activity-database/" target="_blank">
+            <img src="assets/images/link-icon.png" alt="Link icon">
+            Browse our activity / project database</a>
+    </div>
+    <div class="jet-listing-dynamic-repeater__item">
+        <a href="https://waterc.sg-host.com/priority-countries" target="_blank">
+            <img src="assets/images/link-icon.png" alt="Link icon">
+            Read more about USAID's High-Priority Countries</a>
+    </div>
+</div>
+
+<!-- Third party dependencies -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/underscore-min.js"></script>
+<script src="assets/js/leaflet.min.js"></script>
+<script src="assets/js/d3.v7.min.js"></script>
+<script src="assets/js/switchery.min.js"></script>
+<script src="assets/js/select2.full.min.js"></script>
+
+<!-- Plugins -->
+<script src="src/chart/scatter-map.js"></script>
+
+<!--Helpers-->
+<script src="src/util/WidthHelperModule.js"></script>
+<script src="src/util/DataHelper.js"></script>
+
+<script src="src/data/DataModule.js"></script>
+<script src="src/data/DataRepository.js"></script>
+<script src="src/Consumer.js"></script>
+
+</body>
+</html>
