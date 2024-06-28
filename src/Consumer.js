@@ -180,6 +180,9 @@ let Consumer = (function () {
 
     if (region === 'Middle East') {
       legendLabels.push({label: STATUS.SPC, definition: 'spc'});
+      legendLabels = legendLabels.filter(function( obj ) {
+        return obj.definition !== 'hpc';
+      });
     } else {
       legendLabels = legendLabels.filter(function( obj ) {
         return obj.definition !== 'spc';

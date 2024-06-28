@@ -540,6 +540,7 @@ li.indicator-definition {
     color: #012f6c;
     font-weight: 600;
     cursor: pointer;
+    font-size: 20px;
 }
 
 .region-div .item:last-child {
@@ -621,8 +622,8 @@ li.indicator-definition {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .jet-listing-dynamic-repeater__item > * {
