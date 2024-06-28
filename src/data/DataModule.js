@@ -384,7 +384,7 @@ let DataModule = (function () {
       status: STATUS.HPC,
       statusClass: 'hpc',
       type: 'display',
-      profileUrl: 'https://www.globalwaters.org/WhereWeWork/Africa/DRC'
+      profileUrl: 'https://waterc.sg-host.com/country/DRC'
     },
     {
       region: REGION.LATIN_AMERICA,
@@ -654,7 +654,7 @@ let DataModule = (function () {
       status: STATUS.HPC,
       statusClass: 'hpc',
       type: 'display',
-      profileUrl: 'https://www.globalwaters.org/WhereWeWork/Africa/Malawi'
+      profileUrl: 'https://waterc.sg-host.com/country/malawi'
     },
     {
       region: REGION.AFRICA,
@@ -672,7 +672,7 @@ let DataModule = (function () {
       status: STATUS.HPC,
       statusClass: 'hpc',
       type: 'display',
-      profileUrl: 'https://www.globalwaters.org/WhereWeWork/Africa/Mozambique'
+      profileUrl: 'https://waterc.sg-host.com/country/mozambique'
     },
     {
       region: REGION.ASIA,

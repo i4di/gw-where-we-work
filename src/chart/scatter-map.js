@@ -157,6 +157,7 @@ function scatterMap() {
         return 1;
       })
       .style('pointer-events', 'auto')
+      .attr('data-id', 'country-svg')
       .on('mouseover', function(_, d) {
         if (d.status !== 'Other') {
           // showPopover(d);

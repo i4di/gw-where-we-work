@@ -15,6 +15,9 @@ let Consumer = (function () {
     $countryTitle,
     $countryLink;
 
+  let $loadingOverlay,
+    $loadingIndicator;
+
   let africaCountries,
     asiaCountries,
     middleEasternCountries,
@@ -32,6 +35,9 @@ let Consumer = (function () {
     $countryTitle = $('.country-title');
     $countryLink = $('.country-link');
 
+    $loadingOverlay = $('.loading-overlay');
+    $loadingIndicator = $('.loading');
+
     initializeGui();
     initializeEvents();
   };
@@ -46,6 +52,12 @@ let Consumer = (function () {
 
     $(document).on('mouseenter', '.country-link', event => onHoverCountryLink(event));
     $(document).on('mouseleave', '.country-link', event => onHoverLeaveCountryLink(event));
+
+    $(document).on('click', function (e) {
+      if ($(e.target).attr('data-id') !== 'country-svg') {
+        $('.popover').popover('hide');
+      }
+    });
   };
 
   let onHoverCountryLink = (e) => {
@@ -70,7 +82,6 @@ let Consumer = (function () {
     $element.children(":first").toggleClass('active');
 
     region = $element.children(":first").children(":first").attr('data-region');
-    $countryTitle.html(region);
 
     let countries = [];
 
@@ -80,22 +91,29 @@ let Consumer = (function () {
       case 'Africa':
         needToFetchGeojsons = !africaCountries;
         countries = needToFetchGeojsons ? [] : africaCountries;
+        $('.countries-container').css('height', '400px');
         break;
       case 'Asia':
         needToFetchGeojsons = !asiaCountries;
         countries = needToFetchGeojsons ? [] : asiaCountries;
+        $('.countries-container').css('height', 'auto');
         break;
       case 'Middle East':
         needToFetchGeojsons = !middleEasternCountries;
         countries = needToFetchGeojsons ? [] : middleEasternCountries;
+        $('.countries-container').css('height', 'auto');
         break;
       case 'Latin America and the Caribbean':
         needToFetchGeojsons = !latinAmericaCountries;
         countries = needToFetchGeojsons ? [] :   latinAmericaCountries;
+        $('.countries-container').css('height', 'auto');
         break;
     }
 
     if (needToFetchGeojsons) {
+      $loadingOverlay.show();
+      $loadingIndicator.show();
+
       let data = DataModule.getCountries2022().filter(d => d.region === region);
 
       for (let i = 0; i < data.length; i++) {
@@ -122,10 +140,15 @@ let Consumer = (function () {
       }
     }
 
+    $countryTitle.html(region);
+
     $('.countries-container').html(renderCountriesByRegion(countries));
     mapData = countries;
 
     !resultsMap ? initializeMap() : drawMap();
+
+    $loadingOverlay.hide();
+    $loadingIndicator.hide();
   }
 
   function initializeMap() {
@@ -204,19 +227,18 @@ let Consumer = (function () {
 
     for (let i = 0; i < countries.length; i++) {
       if (countries[i].type === 'display') {
+        let noLinkHtml = `<div><i class="fas fa-map-marker-alt" style="color: ${pointColor(countries[i]).dark}"></i> <a href="${countries[i].profileUrl}" target="_blank" onclick="return false;" class="country-link country-no-link" data-iso="${countries[i].iso3}">${countries[i].name}</a></div>`;
+        let hasLinkHtml = `<i class="fas fa-map-marker-alt" style="color: ${pointColor(countries[i]).dark}"></i> <a href="${countries[i].profileUrl}" target="'_blank'}" class="country-link" data-iso="${countries[i].iso3}">${countries[i].name}</a>`;
+
         if (countries.length > 20) {
-          html += `<div class="country-item"><i class="fas fa-map-marker-alt" style="color: ${pointColor(countries[i]).dark}"></i> <a href="${countries[i].profileUrl ? countries[i].profileUrl : '#'}" target="${countries[i].profileUrl === '#' ? '' : '_blank'}" class="country-link" data-iso="${countries[i].iso3}">${countries[i].name}</a></div>`;
+          html += `<div class="country-item">${countries[i].profileUrl === '#' ? noLinkHtml : hasLinkHtml}</div>`;
         } else {
-          html += `<div style="margin-bottom: 10px;"><i class="fas fa-map-marker-alt" style="color: ${pointColor(countries[i]).dark}"></i> <a href="${countries[i].profileUrl ? countries[i].profileUrl : '#'}" target="${countries[i].profileUrl === '#' ? '' : '_blank'}" class="country-link" data-iso="${countries[i].iso3}">${countries[i].name}</a></div>`;
+          html += `<div style="margin-bottom: 10px;">${countries[i].profileUrl === '#' ? noLinkHtml : hasLinkHtml}</div>`;
         }
       }
     }
 
     return html;
-  }
-
-  let randomFunction = () => {
-    console.log(test);
   }
 
   return {
